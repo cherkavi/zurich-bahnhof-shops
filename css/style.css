@@ -1,0 +1,138 @@
+/**
+ * Layout generated with http://layzilla.com
+ * Layout generator is free of use.
+ * We appreciate if you leave this comment block in commercial use of generator.
+ * All comment and ideas can be submitted to us using contacts below.
+ *
+ *    site: www.jmholding.com
+ *   email: info@jmholding.ru
+ *  twitter: @jmholding
+ */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%; 
+}
+
+.content {
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+	z-index: 0; 
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.top_block {
+	width: 100%;
+	display: block; 
+}
+
+.bottom_block {
+	position: absolute;
+	width: 100%;
+	display: block;
+	bottom: 0; 
+}
+
+.left_block {
+	display: block;
+	float: left; 
+}
+
+.right_block {
+	display: block;
+	float: right; 
+}
+
+.center_block {
+	display: block;
+	width: auto; 
+}
+
+.block_1 {
+	width: 100%;
+	height: 70px;
+	background-color: #9999ff;
+}
+
+.background.block_3 {
+	height: auto !important;
+	padding-bottom: 0;
+	right: 0;
+	width: 300px;
+	background-color: #999966;
+	margin-top: 70px;
+	margin-bottom: 70px; 
+}
+
+.block_3 {
+	height: auto;
+	width: 300px;
+	padding-bottom: 70px;
+}
+
+.background.block_4 {
+	height: auto !important;
+	padding-bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #9966ff;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	margin-right: 300px; 
+        z-index: -100;
+}
+
+.right_block_map_left{
+    height:auto !important;
+    width: 50%;
+    float: left;
+}
+.right_block_map_right{
+    height:auto !important;
+    width: 50%;
+    float:left;
+}
+.button_find{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.block_4 {
+	width: auto;
+	height: auto;
+	padding-bottom: 70px;
+}
+
+.block_2 {
+	width: 100%;
+	height: 70px;
+	background-color: #999999;
+}
+
+.button_show_map{
+    width: 100%;
+    float:left;
+}
+
+#shop_description_popup { 
+    display:none; 
+    background-color: cyan;
+}
+
+#shop_name{
+    display:none; 
+    position: fixed;
+    background-color: cyan;
+}

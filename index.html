@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+	<title>Zurich</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<!-- JQUERY ______________________ -->
+	<!--[if lt IE 9]> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script> <![endif]-->
+	<!--[if gte IE 9]><!--> <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script> <!--<![endif]-->
+        
+        <script src="js/SVGUtils.js" type="text/javascript"></script>
+        <!-- popup window dinbror.dk blog bPopup/ -->
+        <script src="js/jquery.bpopup.min.js" type="text/javascript"></script>
+        
+        <!-- resize image script -->
+	<script>
+                /** widht ( in point ) of SVG image */
+                var currentSvgWidth;
+                /** height ( in point ) of SVG image */
+                var currentSvgHeight;
+
+                /**
+                 * selected objects 
+                 * @type Arguments
+                 */
+                var selectedObjects=[];
+                /**
+                 * 
+                 * @type Array - currently selected points ( part of selectedObjects )
+                 */
+                var selectedPoints=[];
+                
+                /**
+                 * clear all selected elements for map 
+                 * @param selectedElements {String} all elements which was selected ( original names of points )
+                 * @returns {void}
+                 */
+                function clearSelection(selectedElements){
+                    if(selectedElements && selectedElements.length>0){
+                        var index=0;
+                        for(index=0;index<selectedElements.length; index++ ){
+                            removeSvgChildElement(getSvgDocument(), createNewNameForElement(selectedElements[index]));
+                        }
+                    }
+                }
+                
+                /**
+                 * @param newPointsList {Array} - array of points id, which will be selected
+                 * @type type
+                 */
+                function markPoints(newPointsList){
+                    if(newPointsList && newPointsList.length>0){
+                        var index;
+                        for(index=0; index<newPointsList.length; index++){
+                            createCircle(getSvgDocument(),newPointsList[index]);
+                        }
+                    }
+                }
+                
+                /**
+                 * listener for press button find or press enter in text field
+                 * @returns {void}
+                 */
+                function findShops(){
+                    var url="";
+                    if($("input:radio[name=search_type]:checked").val()==='shops'){
+                        console.log("Search Shops : "+$("#textfield_find").val());
+                        url="php/descriptionFinder.php?mode=point&text="+$("#textfield_find").val();
+                    }
+                    if($("input:radio[name=search_type]:checked").val()==='commodity'){
+                        console.log("Search Commodity : "+$("#textfield_find").val());
+                        url="php/descriptionFinder.php?mode=commodity&text="+$("#textfield_find").val();
+                    }
+                    
+                    // TODO TIMER:start ( show )
+                    console.log("start request ");
+                    $.get( url, function( data ) {
+                        // TODO TIMER:end ( hide )
+                        console.log("end request "+data);
+                        processStringFromServer(data);
+                    });
+                }
+                
+                function processStringFromServer(resultFromServer){
+                    selectedObjects=JSON.parse(resultFromServer);
+                    clearSelection(selectedPoints);
+                    selectedPoints=getIdsFromObjects(selectedObjects);
+                    markPoints(selectedPoints);
+                    refershResultPanel(selectedObjects);
+                }
+                
+                function getDescriptionForShop(shopId){
+                    var returnValue="";
+                    var url="php/shopDescription.php?id="+shopId;
+                    // console.log(url);
+                    jQuery.ajax({url: url, async: false, success: function(result){returnValue=result;}});
+                    console.log("returnValue:"+returnValue);
+                    return returnValue;
+                }
+                
+                /**
+                 * 
+                 * @param {type} shopId
+                 * @returns {String} title of shop by id 
+                 */
+                function getSelectedShopName(shopId){
+                    var shopName="";
+                    var index=0;
+                    for(index=0;index<selectedObjects.length;index++){
+                        if(selectedObjects[index].id===shopId){
+                            shopName=selectedObjects[index].title;
+                            break;
+                        }
+                    }
+                    return shopName;
+                }
+                
+                /**
+                 * @returns {html object} HTML result panel 
+                 */
+                function getResultPanel(){
+                    return $("#results");
+                }
+                /**
+                 * clear all results from panel 
+                 * @type {void}
+                 */
+                function clearResultPanel(){
+                    var htmlParentElement=getResultPanel();
+                    // clear current values from panel;
+                    htmlParentElement.empty();
+                }
+                
+                /**
+                 * @param {type} objectsFromServer - objects ( id, title, ... ) from server
+                 * @returns {void}
+                 */
+                function refershResultPanel(objectsFromServer){
+                    clearResultPanel();
+                    
+                    var htmlParentElement=getResultPanel();
+                    var index=0;
+                    for(index=0;index<objectsFromServer.length;index++){
+                        var nextObject=objectsFromServer[index];
+                        htmlParentElement.append(createResultHtmlElement(nextObject));
+                    }
+                }
+                
+                /**
+                 * create one HTML element from server based on object from server
+                 * @param {type} objectFromServer - object from server which has at least one field - "id"
+                 * @returns {html}
+                 */
+                function createResultHtmlElement(objectFromServer){
+                    var functionParameter=objectFromServer.id;
+                    var functionName="zoomToShop";
+                    var executeFunction="javascript:"+functionName+"('"+functionParameter+"')";
+                    return "<a href=\""+executeFunction+"\" >"+objectFromServer.title+"</a>"+"<br />";
+                }
+                
+                /**
+                 * @param objects from JSON server answer
+                 * @returns {undefined} array of id's
+                 */
+                function getIdsFromObjects(objects){
+                    if(objects!==null && objects.length>0){
+                        var index=0;
+                        var returnValue=[];
+                        for( index=0; index<objects.length; index++){
+                            returnValue.push(objects[index].id);
+                        }
+                        return returnValue;
+                    }else{
+                        return [];
+                    }
+                }
+            
+                /**
+                 * set width and height of image as parent element 
+                 * @returns {undefined}
+                 */
+		function setWidthForImage(){
+                    currentSvgWidth=$(".block_4").width();
+                    currentSvgHeight=$(".block_4").height();
+                    
+                    console.log("set image size: w:"+currentSvgWidth+"  h:"+currentSvgHeight);
+                    $("#svg_image_parent").width(currentSvgWidth);
+                    $("#svg_image_parent").height(currentSvgHeight);
+		}
+
+		// onload document 
+                // $(document).ready(function() {  
+		$(window).load(function() {  
+                    // set default size for the map-image
+                    setWidthForImage();
+                    // set default listeners 
+                    $("#textfield_find").on("keypress",function(e){
+                         if(e.which==13){
+                             findShops();
+                         }
+                     });                    
+                    $(".button_find").on("click", function(e){findShops()});
+
+                    // set viewport size, SVG to default position
+                    calculateDefaultZoomPosition(currentSvgWidth, currentSvgHeight, 141, 185);
+                    defaultZoomPosition(getSvgDocument());
+                    
+                    // global ajax indicator
+                    $(document).ajaxStart(function () {
+                        $("#ajax_load_indicator").show();
+                    });
+
+                    $(document).ajaxComplete(function () {
+                        $("#ajax_load_indicator").hide();
+                    });                    
+                });
+		
+		// onchange size of window
+		$(window).resize(function() {
+			if(typeof(resizeTimer) != 'undefined'){
+				clearTimeout(resizeTimer);
+			}
+     			resizeTimer = setTimeout(setWidthForImage(), 100);
+		});
+                
+                
+	</script>
+</head>
+<body>
+	<div class="content">
+<!-- top -->
+		<div class="top_block block_1">
+			<div class="content">
+			</div>
+		</div>
+
+		<div class="background block_3">
+		</div>
+
+<!-- middle-right -->
+		<div class="right_block block_3">
+                    <div class="content">
+                        <div class="right_block_map_left" align="center">
+				<img title="swiss map" src="images/zurich_area_small.png" >
+			</div>
+                        <div class="right_block_map_right" align="center">
+				<img title="europa map" src="images/europa_empty_small.png" >
+			</div>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                       Shops of Zurich
+                    </div>
+                    <div style="text-align: center">
+                        <input type="text" size="15" id="textfield_find" />
+                        <button type="submit" class="button_find">
+                            <img align="left" src="icons/zoom.png" >
+                        </button>
+                    </div>
+                    <br />
+                    <div style="text-align: center">
+                        <input type="radio" name="search_type" value="commodity" id="radio_find_commodity" checked="checked"> commodity
+                        <input type="radio" name="search_type" value="shops" id="radio_find_shops"> shops
+                    </div>
+                    <hr />
+                    <div>
+                        <input type="button" value="show map" class="button_show_map" onclick="defaultZoomPosition(getSvgDocument())" />
+                    </div>
+                    <div id="results">
+                        results
+                    </div>
+		</div>
+<!-- middle-main -->
+		<div class="background block_4">
+
+<embed 
+src="Zurich.svg" 
+type="image/svg+xml" 
+class="map"
+id="svg_image_parent" />
+
+		</div>
+<!--		<div class="center_block block_4">
+			<div class="content">
+			</div>
+		</div>
+-->
+
+<!-- bottom -->
+		<div class="bottom_block block_2">
+			<div class="content">
+			</div>
+                        <div id="shop_name">
+                            shop name
+                        </div>
+                        <div id="shop_description_popup" > 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <b>Name:</b>  Orange<br />
+                                        <b>Address:</b>  Bahnhof 103<br />
+                                        <b>URL:</b>  <a href="orange.com.ua">orange.com.ua</a> <br />
+                                        <b>Phone:</b>  560 46 59<br />
+                                    </td>
+                                    <td>
+                                        <b>Commodities:</b>
+                                        <ul>
+                                            <li>one</li>
+                                            <li>two</li>
+                                            <li>three</li>
+                                            <li>four</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>                    
+		</div>
+	</div>
+</body>
+</html>
