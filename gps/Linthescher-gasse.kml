@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Linthescher-gasse]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Linthescher-gasse (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T11:47:24.282Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.538248,47.373719,548.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Linthescher-gasse]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T11:47:24.282Z</when>
+<gx:coord>8.538248 47.373719 548.0</gx:coord>
+<when>2013-10-27T11:47:28.266Z</when>
+<gx:coord>8.538219 47.373771 545.0</gx:coord>
+<when>2013-10-27T11:47:29.387Z</when>
+<gx:coord>8.5382 47.373805 545.0</gx:coord>
+<when>2013-10-27T11:47:36.202Z</when>
+<gx:coord>8.538186 47.37383 545.0</gx:coord>
+<when>2013-10-27T11:47:37.203Z</when>
+<gx:coord>8.538196 47.373812 545.0</gx:coord>
+<when>2013-10-27T11:47:55.200Z</when>
+<gx:coord>8.538199 47.373806 545.0</gx:coord>
+<when>2013-10-27T11:47:56.201Z</when>
+<gx:coord>8.53819 47.373856 496.0</gx:coord>
+<when>2013-10-27T11:48:03.205Z</when>
+<gx:coord>8.538179 47.373915 496.0</gx:coord>
+<when>2013-10-27T11:48:04.200Z</when>
+<gx:coord>8.53818 47.37391 496.0</gx:coord>
+<when>2013-10-27T11:48:38.200Z</when>
+<gx:coord>8.538181 47.373902 496.0</gx:coord>
+<when>2013-10-27T11:48:39.229Z</when>
+<gx:coord>8.538168 47.37396 490.0</gx:coord>
+<when>2013-10-27T11:48:46.204Z</when>
+<gx:coord>8.538153 47.374026 490.0</gx:coord>
+<when>2013-10-27T11:48:47.211Z</when>
+<gx:coord>8.538101 47.374053 487.0</gx:coord>
+<when>2013-10-27T11:48:55.194Z</when>
+<gx:coord>8.538049 47.374079 487.0</gx:coord>
+<when>2013-10-27T11:48:56.201Z</when>
+<gx:coord>8.538052 47.374077 487.0</gx:coord>
+<when>2013-10-27T11:51:37.184Z</when>
+<gx:coord>8.538057 47.374074 487.0</gx:coord>
+<when>2013-10-27T11:51:38.189Z</when>
+<gx:coord>8.538048 47.37416 481.0</gx:coord>
+<when>2013-10-27T11:51:39.196Z</when>
+<gx:coord>8.538043 47.374211 481.0</gx:coord>
+<when>2013-10-27T11:51:40.190Z</when>
+<gx:coord>8.538018 47.3743 480.0</gx:coord>
+<when>2013-10-27T11:51:41.192Z</when>
+<gx:coord>8.538006 47.374352 480.0</gx:coord>
+<when>2013-10-27T11:51:42.196Z</when>
+<gx:coord>8.537977 47.374483 479.0</gx:coord>
+<when>2013-10-27T11:51:43.189Z</when>
+<gx:coord>8.537972 47.374657 479.0</gx:coord>
+<when>2013-10-27T11:51:44.189Z</when>
+<gx:coord>8.537972 47.374857 479.0</gx:coord>
+<when>2013-10-27T11:51:45.191Z</when>
+<gx:coord>8.537965 47.375002 478.0</gx:coord>
+<when>2013-10-27T11:51:46.187Z</when>
+<gx:coord>8.537961 47.375152 478.0</gx:coord>
+<when>2013-10-27T11:51:47.187Z</when>
+<gx:coord>8.537962 47.375283 478.0</gx:coord>
+<when>2013-10-27T11:51:48.189Z</when>
+<gx:coord>8.537964 47.375411 477.0</gx:coord>
+<when>2013-10-27T11:51:49.209Z</when>
+<gx:coord>8.537968 47.375502 477.0</gx:coord>
+<when>2013-10-27T11:52:02.200Z</when>
+<gx:coord>8.537923 47.375485 475.0</gx:coord>
+<when>2013-10-27T11:52:03.202Z</when>
+<gx:coord>8.53793 47.375473 475.0</gx:coord>
+<when>2013-10-27T11:52:04.201Z</when>
+<gx:coord>8.537931 47.37547 475.0</gx:coord>
+<when>2013-10-27T11:52:05.200Z</when>
+<gx:coord>8.537932 47.375469 475.0</gx:coord>
+<when>2013-10-27T11:52:14.192Z</when>
+<gx:coord>8.537933 47.375469 475.0</gx:coord>
+<when>2013-10-27T11:52:15.197Z</when>
+<gx:coord>8.537994 47.375452 469.0</gx:coord>
+<when>2013-10-27T11:52:21.189Z</when>
+<gx:coord>8.538088 47.375426 469.0</gx:coord>
+<when>2013-10-27T11:52:22.190Z</when>
+<gx:coord>8.538133 47.375417 467.0</gx:coord>
+<when>2013-10-27T11:52:28.194Z</when>
+<gx:coord>8.538249 47.375452 467.0</gx:coord>
+<when>2013-10-27T11:52:29.194Z</when>
+<gx:coord>8.53826 47.375469 466.0</gx:coord>
+<when>2013-10-27T11:52:33.195Z</when>
+<gx:coord>8.538312 47.375529 466.0</gx:coord>
+<when>2013-10-27T11:52:34.195Z</when>
+<gx:coord>8.538325 47.375549 466.0</gx:coord>
+<when>2013-10-27T11:52:38.215Z</when>
+<gx:coord>8.538383 47.375621 465.0</gx:coord>
+<when>2013-10-27T11:52:39.189Z</when>
+<gx:coord>8.538397 47.375634 465.0</gx:coord>
+<when>2013-10-27T11:52:46.194Z</when>
+<gx:coord>8.538474 47.375699 464.0</gx:coord>
+<when>2013-10-27T11:52:47.195Z</when>
+<gx:coord>8.538481 47.375707 464.0</gx:coord>
+<when>2013-10-27T11:52:58.207Z</when>
+<gx:coord>8.538518 47.375788 465.0</gx:coord>
+<when>2013-10-27T11:52:59.206Z</when>
+<gx:coord>8.538521 47.375797 465.0</gx:coord>
+<when>2013-10-27T11:53:08.200Z</when>
+<gx:coord>8.538531 47.37583 465.0</gx:coord>
+<when>2013-10-27T11:53:09.192Z</when>
+<gx:coord>8.53853 47.375829 465.0</gx:coord>
+<when>2013-10-27T11:53:12.191Z</when>
+<gx:coord>8.538533 47.375826 465.0</gx:coord>
+<when>2013-10-27T11:53:13.198Z</when>
+<gx:coord>8.538543 47.375833 465.0</gx:coord>
+<when>2013-10-27T11:53:17.199Z</when>
+<gx:coord>8.538619 47.375894 465.0</gx:coord>
+<when>2013-10-27T11:53:18.199Z</when>
+<gx:coord>8.538638 47.375911 465.0</gx:coord>
+<when>2013-10-27T11:53:22.198Z</when>
+<gx:coord>8.538703 47.375978 466.0</gx:coord>
+<when>2013-10-27T11:53:23.197Z</when>
+<gx:coord>8.538702 47.37599 466.0</gx:coord>
+<when>2013-10-27T11:53:39.205Z</when>
+<gx:coord>8.538709 47.376076 467.0</gx:coord>
+<when>2013-10-27T11:53:40.206Z</when>
+<gx:coord>8.538709 47.37608 467.0</gx:coord>
+<when>2013-10-27T11:53:52.185Z</when>
+<gx:coord>8.538721 47.376153 467.0</gx:coord>
+<when>2013-10-27T11:53:53.197Z</when>
+<gx:coord>8.538721 47.376153 467.0</gx:coord>
+<when>2013-10-27T11:54:08.190Z</when>
+<gx:coord>8.53872 47.376149 469.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Linthescher-gasse (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Linthescher-gasse
+Вид активности: -
+Описание: -
+Общее расстояние: 0,32 км (0,2 мил.)
+Общее время: 06:50
+Время движения: 02:36
+Средняя скорость: 2,84 км/ч (1,8 мил/ч)
+Средняя скорость при движении: 7,43 км/ч (4,6 мил/ч)
+Макс. скорость: 7,43 км/ч (4,6 мил/ч)
+Средний темп: 21:07 мин/км (33:59 мин/мил)
+Средний темп при движении: 8:05 мин/км (13:00 мин/мил)
+Максимальный темп: 8:05 мин/км (13:00 мин/мил)
+Макс. высота: 500 м (1640 фт)
+Мин. высота: 466 м (1529 фт)
+Набор высоты: 0 м (0 фт)
+Макс. угол наклона: -6%
+Мин. угол наклона: -10%
+Записано: 27.10.2013 11:47
+]]></description>
+<TimeStamp><when>2013-10-27T11:54:08.190Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.53872,47.376149,469.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

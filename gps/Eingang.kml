@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Eingang]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Eingang (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T10:52:24.128Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.534051,47.371267,425.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Eingang]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T10:52:24.128Z</when>
+<gx:coord>8.534051 47.371267 425.0</gx:coord>
+<when>2013-10-27T10:52:24.957Z</when>
+<gx:coord>8.534059 47.371274 425.0</gx:coord>
+<when>2013-10-27T10:52:26.182Z</when>
+<gx:coord>8.534161 47.371322 448.0</gx:coord>
+<when>2013-10-27T10:52:28.219Z</when>
+<gx:coord>8.534203 47.371336 448.0</gx:coord>
+<when>2013-10-27T10:52:29.177Z</when>
+<gx:coord>8.534266 47.371385 456.0</gx:coord>
+<when>2013-10-27T10:52:36.154Z</when>
+<gx:coord>8.534296 47.371416 456.0</gx:coord>
+<when>2013-10-27T10:52:37.152Z</when>
+<gx:coord>8.534292 47.371413 456.0</gx:coord>
+<when>2013-10-27T10:54:41.185Z</when>
+<gx:coord>8.534285 47.371407 456.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Eingang (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Eingang
+Вид активности: -
+Описание: -
+Общее расстояние: 0,03 км (0,0 мил.)
+Общее время: 02:25
+Время движения: 00:12
+Средняя скорость: 0,63 км/ч (0,4 мил/ч)
+Средняя скорость при движении: 7,55 км/ч (4,7 мил/ч)
+Макс. скорость: 7,55 км/ч (4,7 мил/ч)
+Средний темп: 95:57 мин/км (154:25 мин/мил)
+Средний темп при движении: 7:57 мин/км (12:47 мин/мил)
+Максимальный темп: 7:57 мин/км (12:47 мин/мил)
+Макс. высота: -9223372036854775808 м (-9223372036854775808 фт)
+Мин. высота: 9223372036854775807 м (9223372036854775807 фт)
+Набор высоты: 0 м (0 фт)
+Макс. угол наклона: 0%
+Мин. угол наклона: 0%
+Записано: 27.10.2013 10:52
+]]></description>
+<TimeStamp><when>2013-10-27T10:54:41.185Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.534285,47.371407,456.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

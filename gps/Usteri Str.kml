@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Usteri Str]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Usteri Str (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T16:18:00.873Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.5385,47.376954,512.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Usteri Str]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T16:18:00.873Z</when>
+<gx:coord>8.5385 47.376954 512.0</gx:coord>
+<when>2013-10-27T16:18:03.806Z</when>
+<gx:coord>8.538554 47.376901 516.0</gx:coord>
+<when>2013-10-27T16:18:04.765Z</when>
+<gx:coord>8.538577 47.376879 516.0</gx:coord>
+<when>2013-10-27T16:18:11.181Z</when>
+<gx:coord>8.538545 47.376816 504.0</gx:coord>
+<when>2013-10-27T16:18:12.191Z</when>
+<gx:coord>8.538526 47.376793 504.0</gx:coord>
+<when>2013-10-27T16:18:17.182Z</when>
+<gx:coord>8.538511 47.376779 504.0</gx:coord>
+<when>2013-10-27T16:18:18.180Z</when>
+<gx:coord>8.538512 47.376782 504.0</gx:coord>
+<when>2013-10-27T16:19:01.149Z</when>
+<gx:coord>8.538517 47.376789 489.0</gx:coord>
+<when>2013-10-27T16:19:02.157Z</when>
+<gx:coord>8.538487 47.376755 489.0</gx:coord>
+<when>2013-10-27T16:19:03.155Z</when>
+<gx:coord>8.538426 47.37669 489.0</gx:coord>
+<when>2013-10-27T16:19:04.158Z</when>
+<gx:coord>8.538345 47.376613 488.0</gx:coord>
+<when>2013-10-27T16:19:05.156Z</when>
+<gx:coord>8.538263 47.376545 488.0</gx:coord>
+<when>2013-10-27T16:19:06.155Z</when>
+<gx:coord>8.538199 47.376496 488.0</gx:coord>
+<when>2013-10-27T16:19:08.155Z</when>
+<gx:coord>8.538114 47.376444 487.0</gx:coord>
+<when>2013-10-27T16:19:09.151Z</when>
+<gx:coord>8.538087 47.376434 487.0</gx:coord>
+<when>2013-10-27T16:19:15.157Z</when>
+<gx:coord>8.538062 47.376446 485.0</gx:coord>
+<when>2013-10-27T16:19:16.149Z</when>
+<gx:coord>8.538067 47.37645 485.0</gx:coord>
+<when>2013-10-27T16:19:19.165Z</when>
+<gx:coord>8.538071 47.37645 484.0</gx:coord>
+<when>2013-10-27T16:19:20.158Z</when>
+<gx:coord>8.538057 47.376445 484.0</gx:coord>
+<when>2013-10-27T16:19:26.153Z</when>
+<gx:coord>8.53794 47.376422 483.0</gx:coord>
+<when>2013-10-27T16:19:27.153Z</when>
+<gx:coord>8.537928 47.376419 482.0</gx:coord>
+<when>2013-10-27T16:19:37.190Z</when>
+<gx:coord>8.537924 47.37639 482.0</gx:coord>
+<when>2013-10-27T16:19:38.158Z</when>
+<gx:coord>8.53793 47.376393 482.0</gx:coord>
+<when>2013-10-27T16:19:59.156Z</when>
+<gx:coord>8.537928 47.376387 479.0</gx:coord>
+<when>2013-10-27T16:20:00.158Z</when>
+<gx:coord>8.537923 47.376352 479.0</gx:coord>
+<when>2013-10-27T16:20:03.157Z</when>
+<gx:coord>8.537907 47.376286 479.0</gx:coord>
+<when>2013-10-27T16:20:04.158Z</when>
+<gx:coord>8.537882 47.376228 479.0</gx:coord>
+<when>2013-10-27T16:20:07.161Z</when>
+<gx:coord>8.537833 47.37615 479.0</gx:coord>
+<when>2013-10-27T16:20:08.172Z</when>
+<gx:coord>8.537815 47.376141 479.0</gx:coord>
+<when>2013-10-27T16:20:11.161Z</when>
+<gx:coord>8.537735 47.376126 478.0</gx:coord>
+<when>2013-10-27T16:20:12.170Z</when>
+<gx:coord>8.537628 47.376214 478.0</gx:coord>
+<when>2013-10-27T16:20:13.158Z</when>
+<gx:coord>8.537565 47.376253 478.0</gx:coord>
+<when>2013-10-27T16:20:14.158Z</when>
+<gx:coord>8.53751 47.376285 478.0</gx:coord>
+<when>2013-10-27T16:20:16.155Z</when>
+<gx:coord>8.537423 47.376339 477.0</gx:coord>
+<when>2013-10-27T16:20:17.154Z</when>
+<gx:coord>8.537391 47.376358 477.0</gx:coord>
+<when>2013-10-27T16:20:23.153Z</when>
+<gx:coord>8.537288 47.376405 476.0</gx:coord>
+<when>2013-10-27T16:20:24.154Z</when>
+<gx:coord>8.53728 47.37641 475.0</gx:coord>
+<when>2013-10-27T16:20:33.160Z</when>
+<gx:coord>8.537397 47.376384 474.0</gx:coord>
+<when>2013-10-27T16:20:34.161Z</when>
+<gx:coord>8.537416 47.376376 473.0</gx:coord>
+<when>2013-10-27T16:20:41.172Z</when>
+<gx:coord>8.537522 47.376331 472.0</gx:coord>
+<when>2013-10-27T16:20:42.162Z</when>
+<gx:coord>8.537536 47.376324 472.0</gx:coord>
+<when>2013-10-27T16:20:49.159Z</when>
+<gx:coord>8.537537 47.376236 471.0</gx:coord>
+<when>2013-10-27T16:20:50.157Z</when>
+<gx:coord>8.537516 47.376217 471.0</gx:coord>
+<when>2013-10-27T16:20:52.150Z</when>
+<gx:coord>8.537431 47.376171 471.0</gx:coord>
+<when>2013-10-27T16:20:53.160Z</when>
+<gx:coord>8.53741 47.376156 471.0</gx:coord>
+<when>2013-10-27T16:20:58.163Z</when>
+<gx:coord>8.537313 47.376096 471.0</gx:coord>
+<when>2013-10-27T16:20:59.162Z</when>
+<gx:coord>8.537298 47.37609 471.0</gx:coord>
+<when>2013-10-27T16:21:09.157Z</when>
+<gx:coord>8.537259 47.376013 471.0</gx:coord>
+<when>2013-10-27T16:21:10.158Z</when>
+<gx:coord>8.537252 47.376004 471.0</gx:coord>
+<when>2013-10-27T16:21:16.163Z</when>
+<gx:coord>8.537151 47.375951 471.0</gx:coord>
+<when>2013-10-27T16:21:17.171Z</when>
+<gx:coord>8.537137 47.375942 471.0</gx:coord>
+<when>2013-10-27T16:21:29.157Z</when>
+<gx:coord>8.537032 47.375907 470.0</gx:coord>
+<when>2013-10-27T16:21:30.165Z</when>
+<gx:coord>8.537002 47.375903 470.0</gx:coord>
+<when>2013-10-27T16:21:36.163Z</when>
+<gx:coord>8.536875 47.375877 469.0</gx:coord>
+<when>2013-10-27T16:21:37.164Z</when>
+<gx:coord>8.536862 47.375874 469.0</gx:coord>
+<when>2013-10-27T16:21:45.176Z</when>
+<gx:coord>8.536836 47.375873 469.0</gx:coord>
+<when>2013-10-27T16:21:46.168Z</when>
+<gx:coord>8.536838 47.375874 469.0</gx:coord>
+<when>2013-10-27T16:22:04.168Z</when>
+<gx:coord>8.536842 47.375874 470.0</gx:coord>
+<when>2013-10-27T16:22:05.166Z</when>
+<gx:coord>8.53682 47.375869 470.0</gx:coord>
+<when>2013-10-27T16:22:07.167Z</when>
+<gx:coord>8.536723 47.375848 470.0</gx:coord>
+<when>2013-10-27T16:22:08.168Z</when>
+<gx:coord>8.536657 47.375834 470.0</gx:coord>
+<when>2013-10-27T16:22:09.166Z</when>
+<gx:coord>8.536589 47.375821 470.0</gx:coord>
+<when>2013-10-27T16:22:10.171Z</when>
+<gx:coord>8.536527 47.37581 470.0</gx:coord>
+<when>2013-10-27T16:22:13.162Z</when>
+<gx:coord>8.536407 47.375795 470.0</gx:coord>
+<when>2013-10-27T16:22:14.162Z</when>
+<gx:coord>8.536393 47.375795 470.0</gx:coord>
+<when>2013-10-27T16:22:18.165Z</when>
+<gx:coord>8.536391 47.375798 470.0</gx:coord>
+<when>2013-10-27T16:22:19.226Z</when>
+<gx:coord>8.536397 47.375799 470.0</gx:coord>
+<when>2013-10-27T16:22:35.155Z</when>
+<gx:coord>8.536403 47.375806 470.0</gx:coord>
+<when>2013-10-27T16:22:36.156Z</when>
+<gx:coord>8.536391 47.375817 470.0</gx:coord>
+<when>2013-10-27T16:22:39.166Z</when>
+<gx:coord>8.536338 47.375878 470.0</gx:coord>
+<when>2013-10-27T16:22:40.184Z</when>
+<gx:coord>8.536324 47.375895 470.0</gx:coord>
+<when>2013-10-27T16:22:50.165Z</when>
+<gx:coord>8.536305 47.375921 470.0</gx:coord>
+<when>2013-10-27T16:22:51.172Z</when>
+<gx:coord>8.536307 47.375919 470.0</gx:coord>
+<when>2013-10-27T16:22:57.207Z</when>
+<gx:coord>8.536314 47.375911 470.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Usteri Str (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Usteri Str
+Вид активности: -
+Описание: -
+Общее расстояние: 0,32 км (0,2 мил.)
+Общее время: 05:01
+Время движения: 03:03
+Средняя скорость: 3,86 км/ч (2,4 мил/ч)
+Средняя скорость при движении: 6,35 км/ч (3,9 мил/ч)
+Макс. скорость: 8,12 км/ч (5,0 мил/ч)
+Средний темп: 15:33 мин/км (25:02 мин/мил)
+Средний темп при движении: 9:27 мин/км (15:13 мин/мил)
+Максимальный темп: 7:23 мин/км (11:54 мин/мил)
+Макс. высота: 492 м (1613 фт)
+Мин. высота: 470 м (1542 фт)
+Набор высоты: 0 м (0 фт)
+Макс. угол наклона: -2%
+Мин. угол наклона: -10%
+Записано: 27.10.2013 16:17
+]]></description>
+<TimeStamp><when>2013-10-27T16:22:57.207Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.536314,47.375911,470.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

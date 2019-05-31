@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Fake]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Fake (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T14:42:59.288Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.539072,47.373881,461.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Fake]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T14:42:59.288Z</when>
+<gx:coord>8.539072 47.373881 461.0</gx:coord>
+<when>2013-10-27T14:43:22.314Z</when>
+<gx:coord>8.538972 47.373855 465.0</gx:coord>
+<when>2013-10-27T14:43:23.313Z</when>
+<gx:coord>8.538946 47.373848 465.0</gx:coord>
+<when>2013-10-27T14:43:28.315Z</when>
+<gx:coord>8.538933 47.373845 465.0</gx:coord>
+<when>2013-10-27T14:43:29.316Z</when>
+<gx:coord>8.538938 47.373846 465.0</gx:coord>
+<when>2013-10-27T14:43:43.317Z</when>
+<gx:coord>8.538946 47.373848 465.0</gx:coord>
+<when>2013-10-27T14:43:44.316Z</when>
+<gx:coord>8.538948 47.37384 464.0</gx:coord>
+<when>2013-10-27T14:43:51.320Z</when>
+<gx:coord>8.538961 47.373751 464.0</gx:coord>
+<when>2013-10-27T14:43:52.320Z</when>
+<gx:coord>8.538962 47.373743 464.0</gx:coord>
+<when>2013-10-27T14:43:56.318Z</when>
+<gx:coord>8.53903 47.37367 464.0</gx:coord>
+<when>2013-10-27T14:43:57.318Z</when>
+<gx:coord>8.539037 47.373663 464.0</gx:coord>
+<when>2013-10-27T14:44:01.318Z</when>
+<gx:coord>8.539035 47.373667 464.0</gx:coord>
+<when>2013-10-27T14:44:02.318Z</when>
+<gx:coord>8.539033 47.37367 464.0</gx:coord>
+<when>2013-10-27T14:44:03.319Z</when>
+<gx:coord>8.539031 47.373672 464.0</gx:coord>
+<when>2013-10-27T14:44:04.319Z</when>
+<gx:coord>8.539058 47.373635 464.0</gx:coord>
+<when>2013-10-27T14:44:11.319Z</when>
+<gx:coord>8.539093 47.373585 464.0</gx:coord>
+<when>2013-10-27T14:44:12.317Z</when>
+<gx:coord>8.539091 47.373588 464.0</gx:coord>
+<when>2013-10-27T14:44:42.330Z</when>
+<gx:coord>8.539087 47.373593 464.0</gx:coord>
+<when>2013-10-27T14:44:43.327Z</when>
+<gx:coord>8.539116 47.373553 464.0</gx:coord>
+<when>2013-10-27T14:44:48.326Z</when>
+<gx:coord>8.539158 47.373496 464.0</gx:coord>
+<when>2013-10-27T14:44:49.327Z</when>
+<gx:coord>8.539196 47.373461 465.0</gx:coord>
+<when>2013-10-27T14:44:56.326Z</when>
+<gx:coord>8.539241 47.373423 465.0</gx:coord>
+<when>2013-10-27T14:44:57.327Z</when>
+<gx:coord>8.539239 47.373425 465.0</gx:coord>
+<when>2013-10-27T14:45:46.315Z</when>
+<gx:coord>8.539234 47.37343 465.0</gx:coord>
+<when>2013-10-27T14:45:47.310Z</when>
+<gx:coord>8.539189 47.373466 467.0</gx:coord>
+<when>2013-10-27T14:45:54.328Z</when>
+<gx:coord>8.539126 47.373527 468.0</gx:coord>
+<when>2013-10-27T14:45:55.776Z</when>
+<gx:coord>8.539128 47.373547 468.0</gx:coord>
+<when>2013-10-27T14:46:03.325Z</when>
+<gx:coord>8.539175 47.37361 468.0</gx:coord>
+<when>2013-10-27T14:46:04.325Z</when>
+<gx:coord>8.539176 47.37361 468.0</gx:coord>
+<when>2013-10-27T14:46:05.324Z</when>
+<gx:coord>8.539176 47.373609 468.0</gx:coord>
+<when>2013-10-27T14:46:06.330Z</when>
+<gx:coord>8.53916 47.373628 469.0</gx:coord>
+<when>2013-10-27T14:46:14.328Z</when>
+<gx:coord>8.539107 47.373687 469.0</gx:coord>
+<when>2013-10-27T14:46:15.325Z</when>
+<gx:coord>8.539108 47.373686 469.0</gx:coord>
+<when>2013-10-27T14:46:17.325Z</when>
+<gx:coord>8.53911 47.373683 469.0</gx:coord>
+<when>2013-10-27T14:46:18.323Z</when>
+<gx:coord>8.539068 47.373721 469.0</gx:coord>
+<when>2013-10-27T14:46:27.355Z</when>
+<gx:coord>8.539016 47.373767 469.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Fake (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Fake
+Вид активности: -
+Описание: -
+Общее расстояние: 0,11 км (0,1 мил.)
+Общее время: 03:33
+Время движения: 01:45
+Средняя скорость: 1,88 км/ч (1,2 мил/ч)
+Средняя скорость при движении: 3,82 км/ч (2,4 мил/ч)
+Макс. скорость: 3,82 км/ч (2,4 мил/ч)
+Средний темп: 31:54 мин/км (51:20 мин/мил)
+Средний темп при движении: 15:42 мин/км (25:16 мин/мил)
+Максимальный темп: 15:42 мин/км (25:16 мин/мил)
+Макс. высота: 466 м (1530 фт)
+Мин. высота: 464 м (1523 фт)
+Набор высоты: 2 м (7 фт)
+Макс. угол наклона: 0%
+Мин. угол наклона: 0%
+Записано: 27.10.2013 14:42
+]]></description>
+<TimeStamp><when>2013-10-27T14:46:27.355Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.539016,47.373767,469.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

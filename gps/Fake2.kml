@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Fake2]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Fake2 (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T15:02:26.426Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.539875,47.372251,497.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Fake2]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T15:02:26.426Z</when>
+<gx:coord>8.539875 47.372251 497.0</gx:coord>
+<when>2013-10-27T15:02:36.277Z</when>
+<gx:coord>8.539999 47.372236 493.0</gx:coord>
+<when>2013-10-27T15:02:37.294Z</when>
+<gx:coord>8.540029 47.372233 493.0</gx:coord>
+<when>2013-10-27T15:02:42.294Z</when>
+<gx:coord>8.540042 47.372231 493.0</gx:coord>
+<when>2013-10-27T15:02:43.293Z</when>
+<gx:coord>8.540038 47.372232 493.0</gx:coord>
+<when>2013-10-27T15:02:44.296Z</when>
+<gx:coord>8.540034 47.372232 493.0</gx:coord>
+<when>2013-10-27T15:02:45.295Z</when>
+<gx:coord>8.5401 47.372234 478.0</gx:coord>
+<when>2013-10-27T15:02:50.295Z</when>
+<gx:coord>8.5402 47.37225 476.0</gx:coord>
+<when>2013-10-27T15:02:51.296Z</when>
+<gx:coord>8.540241 47.372258 475.0</gx:coord>
+<when>2013-10-27T15:03:07.290Z</when>
+<gx:coord>8.54031 47.372184 475.0</gx:coord>
+<when>2013-10-27T15:03:08.291Z</when>
+<gx:coord>8.54031 47.372172 475.0</gx:coord>
+<when>2013-10-27T15:03:13.293Z</when>
+<gx:coord>8.540265 47.372102 475.0</gx:coord>
+<when>2013-10-27T15:03:14.292Z</when>
+<gx:coord>8.540247 47.372091 474.0</gx:coord>
+<when>2013-10-27T15:03:23.298Z</when>
+<gx:coord>8.540143 47.372041 475.0</gx:coord>
+<when>2013-10-27T15:03:24.298Z</when>
+<gx:coord>8.540136 47.372036 475.0</gx:coord>
+<when>2013-10-27T15:03:39.292Z</when>
+<gx:coord>8.540052 47.371972 475.0</gx:coord>
+<when>2013-10-27T15:03:40.292Z</when>
+<gx:coord>8.540053 47.371972 475.0</gx:coord>
+<when>2013-10-27T15:03:47.298Z</when>
+<gx:coord>8.540057 47.371968 475.0</gx:coord>
+<when>2013-10-27T15:03:48.279Z</when>
+<gx:coord>8.540055 47.371964 475.0</gx:coord>
+<when>2013-10-27T15:03:56.302Z</when>
+<gx:coord>8.540078 47.371876 475.0</gx:coord>
+<when>2013-10-27T15:03:57.302Z</when>
+<gx:coord>8.540075 47.371875 475.0</gx:coord>
+<when>2013-10-27T15:03:59.299Z</when>
+<gx:coord>8.54007 47.371877 475.0</gx:coord>
+<when>2013-10-27T15:04:00.354Z</when>
+<gx:coord>8.540069 47.371879 475.0</gx:coord>
+<when>2013-10-27T15:04:36.322Z</when>
+<gx:coord>8.540069 47.371885 475.0</gx:coord>
+<when>2013-10-27T15:04:37.292Z</when>
+<gx:coord>8.540051 47.371898 475.0</gx:coord>
+<when>2013-10-27T15:04:39.333Z</when>
+<gx:coord>8.539968 47.371961 474.0</gx:coord>
+<when>2013-10-27T15:04:40.334Z</when>
+<gx:coord>8.539929 47.371993 474.0</gx:coord>
+<when>2013-10-27T15:04:47.308Z</when>
+<gx:coord>8.53988 47.372033 474.0</gx:coord>
+<when>2013-10-27T15:04:48.309Z</when>
+<gx:coord>8.539883 47.37203 474.0</gx:coord>
+<when>2013-10-27T15:05:00.328Z</when>
+<gx:coord>8.539893 47.372026 473.0</gx:coord>
+<when>2013-10-27T15:05:01.445Z</when>
+<gx:coord>8.539903 47.372027 473.0</gx:coord>
+<when>2013-10-27T15:05:11.306Z</when>
+<gx:coord>8.539969 47.372029 472.0</gx:coord>
+<when>2013-10-27T15:05:12.284Z</when>
+<gx:coord>8.539957 47.372029 472.0</gx:coord>
+<when>2013-10-27T15:05:16.335Z</when>
+<gx:coord>8.539951 47.372023 472.0</gx:coord>
+<when>2013-10-27T15:05:17.327Z</when>
+<gx:coord>8.539947 47.372011 472.0</gx:coord>
+<when>2013-10-27T15:05:31.299Z</when>
+<gx:coord>8.540057 47.371964 472.0</gx:coord>
+<when>2013-10-27T15:05:32.302Z</when>
+<gx:coord>8.54007 47.371968 472.0</gx:coord>
+<when>2013-10-27T15:05:43.378Z</when>
+<gx:coord>8.540191 47.371984 472.0</gx:coord>
+<when>2013-10-27T15:05:44.304Z</when>
+<gx:coord>8.5402 47.371984 472.0</gx:coord>
+<when>2013-10-27T15:05:46.304Z</when>
+<gx:coord>8.540222 47.371986 472.0</gx:coord>
+<when>2013-10-27T15:05:47.324Z</when>
+<gx:coord>8.540779 47.372136 474.0</gx:coord>
+<when>2013-10-27T15:05:48.320Z</when>
+<gx:coord>8.541211 47.372246 475.0</gx:coord>
+<when>2013-10-27T15:05:49.313Z</when>
+<gx:coord>8.541574 47.372338 475.0</gx:coord>
+<when>2013-10-27T15:05:50.320Z</when>
+<gx:coord>8.541821 47.372401 476.0</gx:coord>
+<when>2013-10-27T15:05:51.325Z</when>
+<gx:coord>8.54177 47.372385 477.0</gx:coord>
+<when>2013-10-27T15:05:52.327Z</when>
+<gx:coord>8.541621 47.372342 478.0</gx:coord>
+<when>2013-10-27T15:05:53.320Z</when>
+<gx:coord>8.541431 47.372288 478.0</gx:coord>
+<when>2013-10-27T15:05:54.323Z</when>
+<gx:coord>8.541231 47.372233 479.0</gx:coord>
+<when>2013-10-27T15:05:55.358Z</when>
+<gx:coord>8.541064 47.372188 479.0</gx:coord>
+<when>2013-10-27T15:05:56.326Z</when>
+<gx:coord>8.54089 47.372145 480.0</gx:coord>
+<when>2013-10-27T15:05:57.288Z</when>
+<gx:coord>8.540752 47.372112 480.0</gx:coord>
+<when>2013-10-27T15:05:58.378Z</when>
+<gx:coord>8.540571 47.372072 480.0</gx:coord>
+<when>2013-10-27T15:06:03.308Z</when>
+<gx:coord>8.540502 47.372056 480.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Fake2 (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Fake2
+Вид активности: -
+Описание: -
+Общее расстояние: 0,37 км (0,2 мил.)
+Общее время: 03:42
+Время движения: 02:31
+Средняя скорость: 6,01 км/ч (3,7 мил/ч)
+Средняя скорость при движении: 8,82 км/ч (5,5 мил/ч)
+Макс. скорость: 8,82 км/ч (5,5 мил/ч)
+Средний темп: 9:59 мин/км (16:04 мин/мил)
+Средний темп при движении: 6:48 мин/км (10:57 мин/мил)
+Максимальный темп: 6:48 мин/км (10:57 мин/мил)
+Макс. высота: 480 м (1573 фт)
+Мин. высота: 474 м (1554 фт)
+Набор высоты: 2 м (5 фт)
+Макс. угол наклона: 2%
+Мин. угол наклона: 0%
+Записано: 27.10.2013 15:02
+]]></description>
+<TimeStamp><when>2013-10-27T15:06:03.308Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.540502,47.372056,480.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

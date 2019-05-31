@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Munsterhof]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Munsterhof (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T13:42:10.435Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.540493,47.369992,483.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Munsterhof]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T13:42:10.435Z</when>
+<gx:coord>8.540493 47.369992 483.0</gx:coord>
+<when>2013-10-27T13:42:21.317Z</when>
+<gx:coord>8.540398 47.370038 466.0</gx:coord>
+<when>2013-10-27T13:42:22.318Z</when>
+<gx:coord>8.540401 47.370037 466.0</gx:coord>
+<when>2013-10-27T13:42:34.289Z</when>
+<gx:coord>8.540409 47.370033 466.0</gx:coord>
+<when>2013-10-27T13:42:35.367Z</when>
+<gx:coord>8.540448 47.370084 472.0</gx:coord>
+<when>2013-10-27T13:42:39.266Z</when>
+<gx:coord>8.540465 47.370108 475.0</gx:coord>
+<when>2013-10-27T13:42:40.286Z</when>
+<gx:coord>8.540461 47.370102 475.0</gx:coord>
+<when>2013-10-27T13:43:03.261Z</when>
+<gx:coord>8.540458 47.370098 475.0</gx:coord>
+<when>2013-10-27T13:43:04.258Z</when>
+<gx:coord>8.540423 47.370091 475.0</gx:coord>
+<when>2013-10-27T13:43:07.260Z</when>
+<gx:coord>8.540322 47.370059 474.0</gx:coord>
+<when>2013-10-27T13:43:08.258Z</when>
+<gx:coord>8.540303 47.370052 474.0</gx:coord>
+<when>2013-10-27T13:43:12.266Z</when>
+<gx:coord>8.540308 47.370046 474.0</gx:coord>
+<when>2013-10-27T13:43:13.271Z</when>
+<gx:coord>8.540317 47.370051 474.0</gx:coord>
+<when>2013-10-27T13:43:14.265Z</when>
+<gx:coord>8.540326 47.370055 474.0</gx:coord>
+<when>2013-10-27T13:43:33.297Z</when>
+<gx:coord>8.540209 47.370092 472.0</gx:coord>
+<when>2013-10-27T13:43:34.295Z</when>
+<gx:coord>8.540201 47.370099 472.0</gx:coord>
+<when>2013-10-27T13:43:44.270Z</when>
+<gx:coord>8.540204 47.370188 471.0</gx:coord>
+<when>2013-10-27T13:43:45.263Z</when>
+<gx:coord>8.540205 47.370189 471.0</gx:coord>
+<when>2013-10-27T13:43:47.275Z</when>
+<gx:coord>8.540208 47.370178 471.0</gx:coord>
+<when>2013-10-27T13:43:48.280Z</when>
+<gx:coord>8.540209 47.370177 471.0</gx:coord>
+<when>2013-10-27T13:43:49.267Z</when>
+<gx:coord>8.54021 47.370178 471.0</gx:coord>
+<when>2013-10-27T13:43:50.271Z</when>
+<gx:coord>8.540224 47.370169 470.0</gx:coord>
+<when>2013-10-27T13:44:22.271Z</when>
+<gx:coord>8.540218 47.370222 468.0</gx:coord>
+<when>2013-10-27T13:44:23.274Z</when>
+<gx:coord>8.540214 47.370222 468.0</gx:coord>
+<when>2013-10-27T13:44:24.268Z</when>
+<gx:coord>8.540204 47.370224 468.0</gx:coord>
+<when>2013-10-27T13:44:27.267Z</when>
+<gx:coord>8.540191 47.370227 468.0</gx:coord>
+<when>2013-10-27T13:44:28.267Z</when>
+<gx:coord>8.540191 47.370227 468.0</gx:coord>
+<when>2013-10-27T13:44:31.280Z</when>
+<gx:coord>8.540186 47.370227 467.0</gx:coord>
+<when>2013-10-27T13:44:32.315Z</when>
+<gx:coord>8.540173 47.370226 467.0</gx:coord>
+<when>2013-10-27T13:44:36.259Z</when>
+<gx:coord>8.540102 47.37021 467.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Munsterhof (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Munsterhof
+Вид активности: -
+Описание: -
+Общее расстояние: 0,07 км (0,0 мил.)
+Общее время: 02:30
+Время движения: 01:40
+Средняя скорость: 1,74 км/ч (1,1 мил/ч)
+Средняя скорость при движении: 2,60 км/ч (1,6 мил/ч)
+Макс. скорость: 2,60 км/ч (1,6 мил/ч)
+Средний темп: 34:28 мин/км (55:28 мин/мил)
+Средний темп при движении: 23:03 мин/км (37:06 мин/мил)
+Максимальный темп: 23:03 мин/км (37:06 мин/мил)
+Макс. высота: 472 м (1548 фт)
+Мин. высота: 471 м (1546 фт)
+Набор высоты: 0 м (1 фт)
+Макс. угол наклона: 0%
+Мин. угол наклона: 0%
+Записано: 27.10.2013 13:42
+]]></description>
+<TimeStamp><when>2013-10-27T13:44:36.259Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.540102,47.37021,467.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

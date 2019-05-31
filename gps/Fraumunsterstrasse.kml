@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Fraumunsterstrasse]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Fraumunsterstrasse (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T13:31:35.897Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.540561,47.368169,444.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Fraumunsterstrasse]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T13:31:35.897Z</when>
+<gx:coord>8.540561 47.368169 444.0</gx:coord>
+<when>2013-10-27T13:31:36.842Z</when>
+<gx:coord>8.540636 47.368096 440.0</gx:coord>
+<when>2013-10-27T13:31:38.364Z</when>
+<gx:coord>8.540642 47.368089 440.0</gx:coord>
+<when>2013-10-27T13:31:39.320Z</when>
+<gx:coord>8.540739 47.368061 445.0</gx:coord>
+<when>2013-10-27T13:31:40.411Z</when>
+<gx:coord>8.540781 47.36805 445.0</gx:coord>
+<when>2013-10-27T13:31:43.333Z</when>
+<gx:coord>8.540868 47.368028 457.0</gx:coord>
+<when>2013-10-27T13:31:44.302Z</when>
+<gx:coord>8.540911 47.368017 457.0</gx:coord>
+<when>2013-10-27T13:31:50.295Z</when>
+<gx:coord>8.540931 47.368013 457.0</gx:coord>
+<when>2013-10-27T13:31:51.294Z</when>
+<gx:coord>8.540926 47.368015 457.0</gx:coord>
+<when>2013-10-27T13:31:57.299Z</when>
+<gx:coord>8.540915 47.368017 457.0</gx:coord>
+<when>2013-10-27T13:31:58.308Z</when>
+<gx:coord>8.540943 47.368017 458.0</gx:coord>
+<when>2013-10-27T13:32:02.297Z</when>
+<gx:coord>8.54098 47.368017 456.0</gx:coord>
+<when>2013-10-27T13:32:03.292Z</when>
+<gx:coord>8.540979 47.368017 455.0</gx:coord>
+<when>2013-10-27T13:32:06.300Z</when>
+<gx:coord>8.540976 47.368017 455.0</gx:coord>
+<when>2013-10-27T13:32:07.314Z</when>
+<gx:coord>8.540989 47.368023 455.0</gx:coord>
+<when>2013-10-27T13:32:10.306Z</when>
+<gx:coord>8.541053 47.368092 455.0</gx:coord>
+<when>2013-10-27T13:32:11.308Z</when>
+<gx:coord>8.541063 47.368109 455.0</gx:coord>
+<when>2013-10-27T13:32:22.295Z</when>
+<gx:coord>8.540996 47.368136 455.0</gx:coord>
+<when>2013-10-27T13:32:23.296Z</when>
+<gx:coord>8.540995 47.368135 455.0</gx:coord>
+<when>2013-10-27T13:32:28.278Z</when>
+<gx:coord>8.540996 47.368123 455.0</gx:coord>
+<when>2013-10-27T13:32:29.276Z</when>
+<gx:coord>8.540995 47.368118 455.0</gx:coord>
+<when>2013-10-27T13:33:03.275Z</when>
+<gx:coord>8.541002 47.368181 455.0</gx:coord>
+<when>2013-10-27T13:33:04.274Z</when>
+<gx:coord>8.541002 47.36818 455.0</gx:coord>
+<when>2013-10-27T13:33:56.273Z</when>
+<gx:coord>8.541004 47.368183 455.0</gx:coord>
+<when>2013-10-27T13:33:57.293Z</when>
+<gx:coord>8.541008 47.368195 456.0</gx:coord>
+<when>2013-10-27T13:34:01.286Z</when>
+<gx:coord>8.541032 47.368277 456.0</gx:coord>
+<when>2013-10-27T13:34:02.286Z</when>
+<gx:coord>8.541037 47.368292 456.0</gx:coord>
+<when>2013-10-27T13:34:11.293Z</when>
+<gx:coord>8.541045 47.368315 456.0</gx:coord>
+<when>2013-10-27T13:34:12.291Z</when>
+<gx:coord>8.541044 47.368313 456.0</gx:coord>
+<when>2013-10-27T13:34:14.302Z</when>
+<gx:coord>8.541044 47.368312 456.0</gx:coord>
+<when>2013-10-27T13:34:15.310Z</when>
+<gx:coord>8.541048 47.368319 456.0</gx:coord>
+<when>2013-10-27T13:34:18.301Z</when>
+<gx:coord>8.541079 47.368395 456.0</gx:coord>
+<when>2013-10-27T13:34:19.301Z</when>
+<gx:coord>8.541088 47.368432 456.0</gx:coord>
+<when>2013-10-27T13:34:20.305Z</when>
+<gx:coord>8.541096 47.36848 456.0</gx:coord>
+<when>2013-10-27T13:34:21.309Z</when>
+<gx:coord>8.541102 47.368532 456.0</gx:coord>
+<when>2013-10-27T13:34:23.300Z</when>
+<gx:coord>8.541109 47.368621 456.0</gx:coord>
+<when>2013-10-27T13:34:24.354Z</when>
+<gx:coord>8.541101 47.368646 456.0</gx:coord>
+<when>2013-10-27T13:34:34.284Z</when>
+<gx:coord>8.541062 47.368726 457.0</gx:coord>
+<when>2013-10-27T13:34:35.283Z</when>
+<gx:coord>8.541059 47.368733 457.0</gx:coord>
+<when>2013-10-27T13:34:38.285Z</when>
+<gx:coord>8.541058 47.368737 457.0</gx:coord>
+<when>2013-10-27T13:34:39.280Z</when>
+<gx:coord>8.541058 47.368736 457.0</gx:coord>
+<when>2013-10-27T13:35:06.283Z</when>
+<gx:coord>8.541057 47.368733 457.0</gx:coord>
+<when>2013-10-27T13:35:07.287Z</when>
+<gx:coord>8.54102 47.368744 457.0</gx:coord>
+<when>2013-10-27T13:35:09.283Z</when>
+<gx:coord>8.540942 47.368776 457.0</gx:coord>
+<when>2013-10-27T13:35:10.286Z</when>
+<gx:coord>8.540904 47.368799 457.0</gx:coord>
+<when>2013-10-27T13:35:13.284Z</when>
+<gx:coord>8.54082 47.368858 457.0</gx:coord>
+<when>2013-10-27T13:35:14.294Z</when>
+<gx:coord>8.5408 47.368884 457.0</gx:coord>
+<when>2013-10-27T13:35:17.285Z</when>
+<gx:coord>8.540785 47.368973 458.0</gx:coord>
+<when>2013-10-27T13:35:18.286Z</when>
+<gx:coord>8.540771 47.368995 458.0</gx:coord>
+<when>2013-10-27T13:35:31.284Z</when>
+<gx:coord>8.540787 47.369064 458.0</gx:coord>
+<when>2013-10-27T13:35:32.339Z</when>
+<gx:coord>8.540788 47.369053 458.0</gx:coord>
+<when>2013-10-27T13:35:54.289Z</when>
+<gx:coord>8.54079 47.369057 458.0</gx:coord>
+<when>2013-10-27T13:35:55.286Z</when>
+<gx:coord>8.540793 47.369062 458.0</gx:coord>
+<when>2013-10-27T13:35:58.294Z</when>
+<gx:coord>8.540828 47.369127 458.0</gx:coord>
+<when>2013-10-27T13:35:59.291Z</when>
+<gx:coord>8.540837 47.369155 459.0</gx:coord>
+<when>2013-10-27T13:36:03.290Z</when>
+<gx:coord>8.54086 47.36923 459.0</gx:coord>
+<when>2013-10-27T13:36:04.289Z</when>
+<gx:coord>8.54086 47.369246 459.0</gx:coord>
+<when>2013-10-27T13:36:11.282Z</when>
+<gx:coord>8.540822 47.36933 459.0</gx:coord>
+<when>2013-10-27T13:36:12.298Z</when>
+<gx:coord>8.540817 47.369334 459.0</gx:coord>
+<when>2013-10-27T13:36:17.287Z</when>
+<gx:coord>8.540813 47.36934 459.0</gx:coord>
+<when>2013-10-27T13:36:18.382Z</when>
+<gx:coord>8.540813 47.369338 459.0</gx:coord>
+<when>2013-10-27T13:36:43.285Z</when>
+<gx:coord>8.540816 47.369341 459.0</gx:coord>
+<when>2013-10-27T13:36:44.300Z</when>
+<gx:coord>8.540819 47.369362 460.0</gx:coord>
+<when>2013-10-27T13:36:46.287Z</when>
+<gx:coord>8.540816 47.369405 460.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Fraumunsterstrasse (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Fraumunsterstrasse
+Вид активности: -
+Описание: -
+Общее расстояние: 0,21 км (0,1 мил.)
+Общее время: 05:22
+Время движения: 02:40
+Средняя скорость: 2,39 км/ч (1,5 мил/ч)
+Средняя скорость при движении: 4,82 км/ч (3,0 мил/ч)
+Макс. скорость: 4,82 км/ч (3,0 мил/ч)
+Средний темп: 25:04 мин/км (40:21 мин/мил)
+Средний темп при движении: 12:27 мин/км (20:03 мин/мил)
+Максимальный темп: 12:27 мин/км (20:03 мин/мил)
+Макс. высота: 458 м (1503 фт)
+Мин. высота: 453 м (1487 фт)
+Набор высоты: 5 м (18 фт)
+Макс. угол наклона: 2%
+Мин. угол наклона: 2%
+Записано: 27.10.2013 13:31
+]]></description>
+<TimeStamp><when>2013-10-27T13:36:46.287Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.540816,47.369405,460.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

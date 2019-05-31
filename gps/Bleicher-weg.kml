@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[Bleicher-weg]]></name>
+<atom:author><atom:name><![CDATA[Создано в приложении Мои треки на Android.]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Мощность (Вт)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Частота вращения педалей (об/мин)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Пульс (уд/мин)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[Bleicher-weg (А)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2013-10-27T13:07:08.716Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>8.539112,47.369169,490.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[Bleicher-weg]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2013-10-27T13:07:08.716Z</when>
+<gx:coord>8.539112 47.369169 490.0</gx:coord>
+<when>2013-10-27T13:07:09.607Z</when>
+<gx:coord>8.539112 47.369169 490.0</gx:coord>
+<when>2013-10-27T13:07:10.705Z</when>
+<gx:coord>8.539106 47.36928 490.0</gx:coord>
+<when>2013-10-27T13:07:18.433Z</when>
+<gx:coord>8.539088 47.36934 491.0</gx:coord>
+<when>2013-10-27T13:07:19.435Z</when>
+<gx:coord>8.539088 47.369338 491.0</gx:coord>
+<when>2013-10-27T13:07:33.449Z</when>
+<gx:coord>8.53909 47.369332 491.0</gx:coord>
+<when>2013-10-27T13:07:34.453Z</when>
+<gx:coord>8.539069 47.369361 494.0</gx:coord>
+<when>2013-10-27T13:07:45.457Z</when>
+<gx:coord>8.53899 47.369428 488.0</gx:coord>
+<when>2013-10-27T13:07:46.464Z</when>
+<gx:coord>8.538961 47.369453 488.0</gx:coord>
+<when>2013-10-27T13:07:48.437Z</when>
+<gx:coord>8.538905 47.369531 487.0</gx:coord>
+<when>2013-10-27T13:07:49.431Z</when>
+<gx:coord>8.538878 47.36957 487.0</gx:coord>
+<when>2013-10-27T13:07:51.428Z</when>
+<gx:coord>8.538832 47.369639 487.0</gx:coord>
+<when>2013-10-27T13:07:52.430Z</when>
+<gx:coord>8.538811 47.369672 487.0</gx:coord>
+<when>2013-10-27T13:07:56.430Z</when>
+<gx:coord>8.538771 47.36975 487.0</gx:coord>
+<when>2013-10-27T13:07:57.446Z</when>
+<gx:coord>8.538757 47.369772 486.0</gx:coord>
+<when>2013-10-27T13:08:10.434Z</when>
+<gx:coord>8.538668 47.369803 485.0</gx:coord>
+<when>2013-10-27T13:08:11.431Z</when>
+<gx:coord>8.53867 47.3698 485.0</gx:coord>
+<when>2013-10-27T13:08:35.435Z</when>
+<gx:coord>8.538662 47.369782 485.0</gx:coord>
+<when>2013-10-27T13:08:36.436Z</when>
+<gx:coord>8.538655 47.369769 485.0</gx:coord>
+<when>2013-10-27T13:08:39.436Z</when>
+<gx:coord>8.538616 47.369695 484.0</gx:coord>
+<when>2013-10-27T13:08:40.440Z</when>
+<gx:coord>8.5386 47.369666 484.0</gx:coord>
+<when>2013-10-27T13:08:51.461Z</when>
+<gx:coord>8.538564 47.369602 484.0</gx:coord>
+<when>2013-10-27T13:08:52.453Z</when>
+<gx:coord>8.538569 47.369611 484.0</gx:coord>
+<when>2013-10-27T13:08:54.444Z</when>
+<gx:coord>8.538561 47.369609 484.0</gx:coord>
+<when>2013-10-27T13:08:55.445Z</when>
+<gx:coord>8.538512 47.369599 484.0</gx:coord>
+<when>2013-10-27T13:08:57.510Z</when>
+<gx:coord>8.538469 47.369589 484.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[Bleicher-weg (Б)]]></name>
+<description><![CDATA[Создано в приложении Мои треки на Android.
+
+Название: Bleicher-weg
+Вид активности: -
+Описание: -
+Общее расстояние: 0,11 км (0,1 мил.)
+Общее время: 01:57
+Время движения: 01:04
+Средняя скорость: 3,44 км/ч (2,1 мил/ч)
+Средняя скорость при движении: 6,23 км/ч (3,9 мил/ч)
+Макс. скорость: 6,23 км/ч (3,9 мил/ч)
+Средний темп: 17:26 мин/км (28:03 мин/мил)
+Средний темп при движении: 9:38 мин/км (15:30 мин/мил)
+Максимальный темп: 9:38 мин/км (15:30 мин/мил)
+Макс. высота: 487 м (1598 фт)
+Мин. высота: 487 м (1597 фт)
+Набор высоты: 0 м (0 фт)
+Макс. угол наклона: 0%
+Мин. угол наклона: 0%
+Записано: 27.10.2013 13:07
+]]></description>
+<TimeStamp><when>2013-10-27T13:08:57.510Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>8.538469,47.369589,484.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
