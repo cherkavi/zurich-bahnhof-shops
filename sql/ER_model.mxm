@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><Model version="5.0">
+    <Configuration>
+        <Property name="dialect" value="MySQLDialect"/>
+        <Property name="ALIAS" value="zurich"/>
+        <Property name="DRIVER" value="com.mysql.jdbc.Driver"/>
+        <Property name="PASSWORD" value="root"/>
+        <Property name="PROMPTFORPASSWORD" value="false"/>
+        <Property name="URL" value="jdbc:mysql://localhost/zurich"/>
+        <Property name="USER" value="root"/>
+    </Configuration>
+    <CustomTypes/>
+    <Domains/>
+    <Tables>
+        <Table id="5a426f9d-e6d9-4b1e-a128-00497aa6fb63" name="point" schema="">
+            <Property name="LOCATION" value="275:120"/>
+            <Property name="avgRowLength" value="0"/>
+            <Property name="characterSet" value=""/>
+            <Property name="checksum" value="false"/>
+            <Property name="delayKeyWrite" value="false"/>
+            <Property name="engine" value="MyISAM"/>
+            <Property name="maxRows" value="0"/>
+            <Property name="minRows" value="0"/>
+            <Property name="packKeys" value="false"/>
+            <Comment>describe points </Comment>
+            <Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="null" id="0b639725-8426-4aa5-a9fd-d7ec8c2da663" name="id" nullable="false" scale="10" size="">
+                <Comment>id of table</Comment>
+            </Attribute>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="1c5fc32b-ede0-4e1d-a26e-f54b5130fe8d" name="address" nullable="true" scale="10" size="255">
+                <Comment>phisical address</Comment>
+            </Attribute>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="a081e508-eedf-45c9-aa99-30a2e88f3a06" name="url" nullable="true" scale="10" size="255">
+                <Comment>http url</Comment>
+            </Attribute>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="cc03ba94-24a2-418e-a2cf-66e7316800ef" name="phone" nullable="true" scale="10" size="100">
+                <Comment>phone number</Comment>
+            </Attribute>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="ea919155-bb2f-4006-be0e-dd618c171934" name="name" nullable="false" scale="10" size="100">
+                <Comment>name of shop ( title )</Comment>
+            </Attribute>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="9523ca8c-8de4-4715-a37b-0f8bfe1d0faf" name="idmap" nullable="false" scale="10" size="50">
+                <Comment>id on map ( svg id )</Comment>
+            </Attribute>
+            <Index id="f9e30a15-9659-41dd-a4f1-732c320210c7" indextype="PRIMARYKEY" name="point_id">
+                <Indexattribute attributerefid="0b639725-8426-4aa5-a9fd-d7ec8c2da663" id="311b3dd7-c508-4145-a6bb-d6d1c485a84e"/>
+            </Index>
+        </Table>
+        <Table id="2079607e-0dd7-4010-946e-cc620ebaaa42" name="commodity" schema="">
+            <Property name="LOCATION" value="748:85"/>
+            <Property name="avgRowLength" value="0"/>
+            <Property name="characterSet" value=""/>
+            <Property name="checksum" value="false"/>
+            <Property name="delayKeyWrite" value="false"/>
+            <Property name="engine" value="MyISAM"/>
+            <Property name="maxRows" value="0"/>
+            <Property name="minRows" value="0"/>
+            <Property name="packKeys" value="false"/>
+            <Comment>list of all available commodities</Comment>
+            <Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="null" id="b83f854d-c42d-48b4-a70b-f7b5f99a2f9e" name="id" nullable="false" scale="10" size=""/>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="303fc5be-a647-45bf-93d2-5305e0f51e18" name="description" nullable="false" scale="10" size="255"/>
+            <Attribute datatype="VARCHAR" defaultvalue="" extra="" fraction="null" id="17a32f50-b09c-45a6-a0e5-4ac937a080f8" name="name" nullable="false" scale="10" size="100"/>
+            <Index id="c6c42116-3126-4c55-ba06-f06516438a43" indextype="PRIMARYKEY" name="pk_commodity">
+                <Indexattribute attributerefid="b83f854d-c42d-48b4-a70b-f7b5f99a2f9e" id="5b4c530f-057a-49a2-8b85-b29b6e09669a"/>
+            </Index>
+        </Table>
+        <Table id="8ebce549-de74-4d51-b186-5f00fc0ce2ff" name="point2commodity" schema="">
+            <Property name="LOCATION" value="697:198"/>
+            <Property name="avgRowLength" value="0"/>
+            <Property name="characterSet" value=""/>
+            <Property name="checksum" value="false"/>
+            <Property name="delayKeyWrite" value="false"/>
+            <Property name="engine" value="MyISAM"/>
+            <Property name="maxRows" value="0"/>
+            <Property name="minRows" value="0"/>
+            <Property name="packKeys" value="false"/>
+            <Comment>link between point and commodity ( emulation point many to many commodity )</Comment>
+            <Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="null" id="b923c782-298e-4c75-b089-eb0abbe643f4" name="id" nullable="false" scale="10" size=""/>
+            <Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="null" id="b0b28428-e4f4-421b-ac47-21793ac5cbd1" name="FK_commodity_id" nullable="false" scale="10" size=""/>
+            <Attribute datatype="INT UNSIGNED" defaultvalue="" extra="" fraction="null" id="a0306ebb-7cc2-4158-8361-e4948ec7c73a" name="FK_point_id" nullable="false" scale="10" size="">
+                <Comment>id of table</Comment>
+            </Attribute>
+            <Index id="491120fa-2d58-47d5-a379-884266195e6e" indextype="UNIQUE" name="pk_point2commodity">
+                <Indexattribute attributerefid="b923c782-298e-4c75-b089-eb0abbe643f4" id="d902ac87-1a74-4b10-858c-957d516bec63"/>
+            </Index>
+        </Table>
+    </Tables>
+    <Relations>
+        <Relation exportingtablerefid="2079607e-0dd7-4010-946e-cc620ebaaa42" id="1e043153-6e51-4f08-938c-45750527f27f" importingtablerefid="8ebce549-de74-4d51-b186-5f00fc0ce2ff" name="commodity_to_point" ondelete="NOTHING" onupdate="NOTHING">
+            <Mapping exportingexpressionrefid="5b4c530f-057a-49a2-8b85-b29b6e09669a" importingattributerefid="b0b28428-e4f4-421b-ac47-21793ac5cbd1"/>
+        </Relation>
+        <Relation exportingtablerefid="5a426f9d-e6d9-4b1e-a128-00497aa6fb63" id="1f683974-e214-45e9-8fbf-d9b1e48a13ba" importingtablerefid="8ebce549-de74-4d51-b186-5f00fc0ce2ff" name="point_to_commodity" ondelete="NOTHING" onupdate="NOTHING">
+            <Mapping exportingexpressionrefid="311b3dd7-c508-4145-a6bb-d6d1c485a84e" importingattributerefid="a0306ebb-7cc2-4158-8361-e4948ec7c73a"/>
+        </Relation>
+    </Relations>
+    <Views/>
+    <Subjectareas/>
+    <Comments/>
+</Model>
